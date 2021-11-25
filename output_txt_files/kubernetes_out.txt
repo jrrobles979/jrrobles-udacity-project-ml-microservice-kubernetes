@@ -1,1 +1,10 @@
 <paste log output from Kubernetes-mediated prediction, here>
+(devops) jrobles@MacBook-Pro-de-Jose jrrobles-udacity-project-ml-microservice-kubernetes % ./run_kubernetes.sh
+deployment.apps/ml-rs-boston-prices created
+NAME                                   READY   STATUS              RESTARTS   AGE
+ml-rs-boston-prices-76c99fb9b7-rkvkz   0/1     ContainerCreating   0          1s
+POD_NAME: ml-rs-boston-prices-76c99fb9b7-rkvkz
+service/ml-rs-boston-prices exposed
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000

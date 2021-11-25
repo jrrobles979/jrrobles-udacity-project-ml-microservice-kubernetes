@@ -20,4 +20,7 @@ minikube kubectl -- get pods
 export POD_NAME=$(minikube kubectl -- get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
 echo POD_NAME: $POD_NAME
 minikube kubectl -- expose deployment/ml-rs-boston-prices --type="NodePort" --port 8000
+
+#wait for 5m
+sleep 300
 minikube kubectl -- port-forward pod/$POD_NAME 8000:80
