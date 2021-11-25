@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build --tag=mlrsbostonprices .
+docker build --tag=ml-rs-boston-prices
 
 # Step 2: 
 # List docker images
@@ -12,5 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run -p 8000:80 mlrsbostonprices 
-
+docker run -p 8000:5001 ml-rs-boston-prices
