@@ -1,4 +1,6 @@
 <paste log output from Kubernetes-mediated prediction, here>
+
+ ./run_kubernetes.sh
 (devops) jrobles@MacBook-Pro-de-Jose jrrobles-udacity-project-ml-microservice-kubernetes % ./run_kubernetes.sh
 deployment.apps/ml-rs-boston-prices created
 NAME                                   READY   STATUS              RESTARTS   AGE
@@ -8,3 +10,15 @@ service/ml-rs-boston-prices exposed
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+
+
+ ./make_prediction.sh
+
+(base) jrobles@MacBook-Pro-de-Jose jrrobles-udacity-project-ml-microservice-kubernetes % ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
